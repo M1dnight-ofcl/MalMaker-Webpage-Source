@@ -1,0 +1,138 @@
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url(bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+section {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #2a2a2d;
+}
+#sect1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url(bg2.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  color: #fff;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 800;
+  font-size: 7vmin;
+}
+#logo {
+  height: 60%;
+}
+#mockup {
+  width: 60%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(2vmin 2vmin 2vminpx #ffffff);
+}
+#title {
+  width: 100%;
+  height: 15vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #2a2a2d;
+}
+#desc_bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, hsla(220, 5%, 11%, 0) 0%, hsla(220, 5%, 11%, 1) 100%);
+}
+#desc {
+  width: 60vmin;
+  height: auto;
+  color: #fff;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  z-index: 3;
+  text-align: right;
+  font-size: 3.65vmin;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 200;
+}
+#productContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+item {
+  height: 45vmin;
+  width: 45vmin;
+  background: #53535a;
+  border-radius: 2.5vmin;
+  padding: 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1vmin;
+}
+item h1 {
+  color: #fff;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 500;
+  font-size: 4vmin;
+  text-align: center;
+}
+.logo {
+  width: 45%;
+}
+item button {
+  width: 100%;
+  padding: 1.5vmin;
+  color: #fff;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 400;
+  font-size: 3vmin;
+  text-align: center;
+  background: #5db17d;
+  border: none;
+  border-radius: 2vmin;
+  transition: 0.45s;
+}
+item button:hover {
+  background: #fff;
+  color: #5db17d;
+  box-shadow: 0 0 2vmin #5db17d;
+  transform: scale(105%);
+}
+item button:active {
+  transform: scale(107.5%);
+  background: #fff;
+  color: #5db17d;
+  box-shadow: 0 0 5vmin #5db17d;
+}
